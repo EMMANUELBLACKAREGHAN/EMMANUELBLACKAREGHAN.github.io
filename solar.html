@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="style.css">
+</head>
+<body>
+    <nav class="c2">
+        <a class="left"   href="cyber.html">CYBER</a>
+        
+       </nav>
+    <div class="solar">
+         <h3>The Solar Winds <span>Breach Case Study</span></h3>
+         <p>
+            The Cyber Kill Chain is a framework that outlines the stages of a cyber attack, providing a structured way to understand, analyze, and mitigate security incidents.<br> <br> The stages in the traditional Cyber Kill Chain model are:
+<br>
+1. Reconnaissance:Gathering information about the target.<br>
+2. Weaponization:Creating or obtaining tools and malware.<br>
+3. Delivery: Transmitting the weapon to the target.<br>
+4. Exploitation:Exploiting vulnerabilities to gain access.<br>
+5. Installation: Installing malware on the target system.<br>
+6. Command and Control (C2):Establishing communication with the compromised system.<br>
+7. Actions on Objectives:Executing the intended goals, which could include data exfiltration or disruption.<br>
+Now, let's analyze the SolarWinds exploit using the Cyber Kill Chain:<br><br>
+<img src="Screenshot 2023-12-14 at 11.33.38.png" alt="">
+<br><br>
+Mitigations for malicious reconnaissance operations include the use of web application firewalls (WAFs) to identify and stop such actions.<br>
+To reduce inadvertent leaking of personal information, train staff members on social engineering techniques.
+Mitigations against weaponization: Use email screening to identify and stop harmful attachments.
+Update and patch software often to address known vulnerabilities.<br>
+Delivery: Mitigations: To filter out harmful content, use email security gateways.
+Use endpoint security tools to identify and stop harmful payloads.
+Utilisation: Reductions:
+Update and patch systems often to fix known vulnerabilities.
+Use network segmentation to prevent attackers from moving laterally.<br><br>
+Installing: Reductions:
+Use application whitelisting to restrict the use of trusted apps.<br>
+The tools used in each phase of the Cyber Kill Chain can vary depending on the specific requirements, infrastructure, and threat landscape of an organization.<br> Here are some commonly used tools for each phase, along with reasons for their use:<br><br>
+* Reconnaissance:<br>
+        * Tools:<br>
+         Shodan, Censys, Recon-ng: These tools help in discovering information about a target's internet-facing assets.<br>
+        TheHarvester, Maltego: These tools aid in collecting open-source intelligence (OSINT) and mapping the attack surface.<br>
+        * Reasons:<br>
+        Efficient reconnaissance tools enable attackers to gather information about the target's infrastructure, technologies in use, and potential vulnerabilities.<br>
+        * Tools: <br>
+         Metasploit, Cobalt Strike: These penetration testing frameworks can be used for crafting and testing exploits.<br>
+        Veil Framework: It allows for the generation of undetectable payload delivery mechanisms.<br>
+* Reasons:<br>
+These tools assist in the development and testing of weaponized payloads, ensuring their effectiveness and evading detection by security systems.<br>
+* 		Delivery:<br>
+        * Tools:<br>
+        Phishing Frameworks (e.g., GoPhish): Used for creating and sending phishing emails to deliver malicious payloads.<br>
+         Setoolkit (Social Engineering Toolkit): Assists in crafting and delivering malicious payloads through social engineering.<br>
+        * Reasons:<br>
+         These tools facilitate the delivery of weaponized payloads to the target, often exploiting human vulnerabilities through phishing and social engineering techniques.
+		<br>Exploitation:<br>
+        * Tools:<br>
+         Metasploit, Exploit Database (Exploit-DB): These tools provide a collection of known exploits for various vulnerabilities.<br>
+         SQLMap: Specifically designed for detecting and exploiting SQL injection vulnerabilities.<br>
+        * Reasons:<br>
+        Exploitation tools help attackers take advantage of vulnerabilities in the target's systems to gain unauthorized access.<br>
+ 		Installation:<br>
+        * Tools:<br>
+         Cobalt Strike, Empire: These post-exploitation frameworks assist in establishing a foothold on the compromised system.<br>
+        PowerShell Empire: Utilized for PowerShell-based attacks and maintaining persistence.<br>
+        * Reasons:<br>
+         These tools help attackers install and maintain a presence on the compromised system, ensuring persistence and control.<br>
+		Command and Control:<br>
+        * Tools:<br>
+         C2 Frameworks (e.g., Covenant, Empire): These frameworks enable remote control of compromised systems.<br>
+         Beacon (part of Cobalt Strike): Provides a covert communication channel.<br>
+        * Reasons:<br>
+         Command and control tools allow attackers to manage compromised systems and exfiltrate data while evading detection.<br>
+		Actions on Objectives:<br>
+        * Tools:<br>
+         Mimikatz: Used for extracting plaintext passwords, hashes, and ticket-granting tickets.<br>
+        Wireshark: Helps in network traffic analysis for data exfiltration detection.<br>
+        * Reasons:<br>
+         These tools assist in achieving the final objectives, which may include data exfiltration, privilege escalation, or other malicious activities.<br>
+
+
+
+
+         </p>
+    </div>
+    
+</body>
+</html>
